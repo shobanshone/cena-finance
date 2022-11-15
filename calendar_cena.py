@@ -31,7 +31,7 @@ if not credentials or not credentials.valid:
             print("Saving credentials for future use...")
             pickle.dump(credentials,file)
 
-#variable for storing calendar
+#variable for storing calendar from google calendar api
 remainder=build('calendar', 'v3', credentials=credentials)
 
 #getting the calendar list and getting te id of the calendar 'fin'
